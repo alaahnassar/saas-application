@@ -1,5 +1,123 @@
-$primary-color:red;
-$second-color:white;
-*{
-    background-color: $primary-color;
+$primary-color:#1f1f1f;
+$second-color:#f8f8f8;
+$third-color:#1290a4;
+p
+{color:#222f3f;
 }
+a{
+    text-decoration: none !important;
+}
+@mixin button {
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid $third-color;
+    border-radius: 3px;
+    background-color:$third-color;
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 14px;
+line-height: 1;
+color:$primary-color;
+
+}
+.site-header{
+    background-color: $second-color;
+    nav{
+        padding: 15px 0;
+
+        a{
+            color: $primary-color;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -1;
+        }
+        a:hover{
+            color: $third-color;
+        }
+        .btn1{
+        background-color: transparent;
+        border: none;
+
+        a{
+            color: #666666;
+           }
+           a:hover{
+               color: $third-color
+           }
+        }
+        .btn2{
+            @include button;
+            width: 137px;
+            height: 39px;
+            margin: 0 17px;
+            a{
+                color: white;
+            }
+        }
+
+    }
+
+    .home{
+        padding: 115px 0;
+
+        .content{
+            padding-right: 35px;
+            h1{
+                font-size: 60px;
+                
+                font-weight: 600;
+                letter-spacing: -4px;
+                line-height: 62px;
+            }
+            p{
+                font-size: 21px;
+                font-weight: 400px;
+                line-height: 36px;
+                margin: 30px 0;
+    
+            }
+            .ph{
+                color: #666666; 
+                font-size: 16px;
+                margin: 5px 0;
+            }
+            input{
+                color: #666666;
+                border-radius: 5px;
+                background: rgba(18, 144, 164, 0.07);
+                padding-left: 17px;
+                border-color: transparent;
+                width: 270px;
+            }
+            .btn2{
+                @include button;
+                margin-left: 30px;
+                height: 50px;
+                width: 177px;
+                font-size: 18px;
+                a{
+                color: white;
+            }
+          
+
+        }
+
+        }
+
+        
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+@import'./bs4/bootstrap.scss';
