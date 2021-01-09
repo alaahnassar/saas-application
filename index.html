@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css\style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="site">
+        <!--header section-->
         <header class="site-header">
             <div class="container">
                 <nav class="navbar-expand-lg d-flex flex-row justify-content-between align-items-center position-relative">
@@ -63,9 +65,7 @@
         </header>
         <!--features section-->
         <section class="Features-section">
-            <div class="shape">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M-9.88,12.33 C232.79,58.72 260.44,-59.72 531.88,48.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#e8f1f3;"></path></svg>
-            </div>
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #e8f1f3;"></path></svg></div>
             <div class="features">
                 <div class="container">
                     <h1 class="p-3">Mark your next step</h1>
@@ -75,7 +75,7 @@
                                 <img src="images/f1.png">
                                 <h3 class="py-2">Targeted Marketing</h3>
                                 <p>Whether it’s a small internal app or a new for millions of customers, our design and development teams.</p>
-                                <a href="">Learn More</a>
+                                <a href="">Learn More <i class="fa fa-angle-right  px-2"></i></a>
                             </div>
                         </div>
                         <div class=" col-lg-4  p-3">
@@ -83,7 +83,7 @@
                                 <img src="images/f2.png">
                                 <h3 class="py-2">Easy Communicaton</h3>
                                 <p>Whether it’s a small internal app or a new for millions of customers, our design and development teams.</p>
-                                <a href="">Learn More</a>
+                                <a href="">Learn More <i class="fa fa-angle-right  px-2"></i></a>
                             </div>
                         </div>
                         <div class=" col-lg-4 p-3">
@@ -91,8 +91,49 @@
                                 <img src="images/f3.png">
                                 <h3 class="py-2">Fastest Setup</h3>
                                 <p>Whether it’s a small internal app or a new for millions of customers, our design and development teams.</p>
-                                <a href="">Learn More</a>
+                                <a href="">Learn More <i class="fa fa-angle-right px-2"></i></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--content section-->
+        <section class="content-section">
+            <div class="content-1 p-5">
+                <div class="d-flex flex-wrap justify-content-center container p-5">
+                    <div class="col-md-6 "><img src="images/content-1.png"></div>
+                    <div class="col-md-6 py-5 ">
+                        <h1 class="py-3">Response on a chat wherever you are</h1>
+                        <p>Create custom landing pages with Shades that convert more visitors than any website, no coding required. </p>
+                        <a href="" class="py-4">Learn More <i class="fa fa-angle-right px-3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-2 p-5">
+                <div class="d-flex flex-wrap justify-content-center container p-5">
+                    <div class="col-md-6 ">
+                        <h1 class="py-3">Never miss a thing</h1>
+                        <p>Event is not like most tech conferences. We want our presentations to engage the audience, spark discussion and inspire new ideas. </p>
+                        <ul class="py-3">
+                            <li><i class="fa fa-check px-3"></i>Unlimited design possibility.</li>
+                            <li><i class="fa fa-check px-3"></i>Unlimited Completely responsive. </li>
+                            <li><i class="fa fa-check px-3"></i>Unlimited Easy to customize.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 "><img src="images/content-2.png"></div>
+                </div>
+            </div>
+            <div class="content-3 py-5">
+                <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.27,82.40 C80.41,125.82 393.05,116.93 625.00,-90.30 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fefdfd;"></path></svg></div>
+                <div class="content-color">
+                    <div class="d-flex flex-wrap justify-content-center container p-5 ">
+                        <div class="col-md-6"><img src="images/content-3.png"></div>
+                        <div class="col-md-6 pl-5">
+                            <h1 class="py-3">Increase Customer Support Productivity</h1>
+                            <p class="pb-2">Event is not like most tech conferences. We want our presentations to engage the audience, spark discussion and inspire new ideas. </p>
+                            <p class="ph py-3">Interested to see how it works? Schedule a free demo to get to learn everything you need to know.</p>
+                            <button class="btn-1"><a href="#">Schedule A Demo</a></button>
                         </div>
                     </div>
                 </div>

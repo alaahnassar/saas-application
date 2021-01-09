@@ -1,8 +1,10 @@
 $primary-color:#1f1f1f;
-$second-color:#f8f8f8;
+//$second-color:;
 $third-color:#1290a4;
+$bg-color:#f8f8f8;
+$p-color: #666666;
 p {
-    color: #222f3f;
+    color: $p-color;
 }
 
 a {
@@ -15,6 +17,14 @@ a {
     border: 1px solid $third-color;
     border-radius: 3px;
     background-color: $third-color;
+}
+
+@mixin link {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    color: $third-color;
 }
 
 * {
@@ -30,117 +40,162 @@ body {
     color: $primary-color;
 }
 
-.site-header {
+.site {
     & {
-        background-color: $second-color;
+        background-color: $bg-color;
     }
-    nav {
-        & {
-            padding: 15px 0;
-        }
-        a {
-            color: $primary-color;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: -1;
-        }
-        a:hover {
-            color: $third-color;
-        }
-        .btn1 {
-            background-color: transparent;
-            border: none;
+    .site-header {
+        nav {
+            & {
+                padding: 15px 0;
+            }
             a {
-                color: #666666;
+                color: $primary-color;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: -1;
             }
             a:hover {
-                color: $third-color
+                color: $third-color;
             }
-        }
-        .btn2 {
-            @include button;
-            width: 137px;
-            height: 39px;
-            margin: 0 17px;
-            a {
-                color: white;
-            }
-        }
-    }
-    .home {
-        padding: 115px 0;
-        .content {
-            padding-right: 35px;
-            h1 {
-                line-height: 62px;
-            }
-            p {
-                font-size: 21px;
-                font-weight: 400px;
-                line-height: 36px;
-                margin: 30px 0;
-            }
-            .ph {
-                color: #666666;
-                font-size: 16px;
-                margin: 5px 0;
-            }
-            input {
-                color: #666666;
-                border-radius: 5px;
-                background: rgba(18, 144, 164, 0.07);
-                padding-left: 17px;
-                border-color: transparent;
-                width: 270px;
+            .btn1 {
+                background-color: transparent;
+                border: none;
+                a {
+                    color: $p-color;
+                }
+                a:hover {
+                    color: $third-color
+                }
             }
             .btn2 {
                 @include button;
-                margin-left: 30px;
-                height: 50px;
-                width: 177px;
-                font-size: 18px;
+                width: 137px;
+                height: 39px;
+                margin: 0 17px;
                 a {
                     color: white;
                 }
             }
         }
-        img {
-            max-width: 100%;
-        }
-    }
-}
-
-
-/*features section*/
-
-.Features-section {
-    .shape {
-        svg {
-            height: 113px;
-            width: 100%;
-        }
-    }
-    .features {
-        & {
-            background-color: #e8f1f3;
-            padding: 50px 0;
-        }
-        h1 {
-            text-align: center;
-        }
-        .feature {
-            & {
-                border-radius: 5px;
-                border: 1px solid #d9e4e6;
-                background-color: #ffffff;
-                padding: 40px 20px;
+        .home {
+            padding: 115px 0 70px;
+            .content {
+                padding-right: 35px;
+                h1 {
+                    line-height: 62px;
+                }
+                p {
+                    font-size: 21px;
+                    font-weight: 400px;
+                    line-height: 36px;
+                    margin: 30px 0;
+                    color: #222f3f
+                }
+                .ph {
+                    color: $p-color;
+                    font-size: 16px;
+                    margin: 5px 0;
+                }
+                input {
+                    color: $p-color;
+                    border-radius: 5px;
+                    background: rgba(18, 144, 164, 0.07);
+                    padding-left: 17px;
+                    border-color: transparent;
+                    width: 270px;
+                }
+                .btn2 {
+                    @include button;
+                    margin-left: 30px;
+                    height: 50px;
+                    width: 177px;
+                    font-size: 18px;
+                    a {
+                        color: white;
+                    }
+                }
             }
-            h3 {
-                letter-spacing: -2px;
-                font-weight: 501;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    /*features section*/
+    .Features-section {
+        .features {
+            & {
+                background-color: #e8f1f3;
+                padding: 60px 0;
+            }
+            h1 {
+                text-align: center;
+            }
+            .feature {
+                & {
+                    border-radius: 5px;
+                    border: 1px solid #d9e4e6;
+                    background-color: #ffffff;
+                    padding: 40px 20px;
+                }
+                h3 {
+                    letter-spacing: -2px;
+                    font-weight: 501;
+                }
+                a {
+                    @include link;
+                }
+            }
+        }
+    }
+    //content-section
+    .content-section {
+        & {
+            h1 {
+                font-size: 48px;
+                line-height: 60px;
             }
             p {
-                color: #666666;
+                font-size: 21px;
+                line-height: 36px;
+                margin-right: 42px;
+            }
+        }
+        .content-1 {
+            a {
+                @include link;
+            }
+        }
+        .content-2 {
+            li {
+                list-style: none;
+                font-size: 21px;
+                color: $primary-color;
+                line-height: 43px;
+            }
+        }
+        .content-3 {
+            .content-color {
+                background-color: #fefdfd;
+                p {
+                    margin-right: 9px;
+                }
+                .ph {
+                    color: $p-color;
+                    font-size: 17px;
+                    border-top: 1px solid #e5e5e5;
+                }
+                .btn-1 {
+                    @include button;
+                    min-width: 170px;
+                    height: 50px;
+                    background-color: #f46f7c;
+                    border: 1px solid #f46f7c;
+                    letter-spacing: -1.02px;
+                    a {
+                        color: #ffffff;
+                    }
+                }
             }
         }
     }
@@ -151,6 +206,11 @@ h1 {
     font-size: 60px;
     font-weight: 600;
     letter-spacing: -3px;
+}
+
+i {
+    color: $third-color;
+    font-size: 19px;
 }
 
 // ========== media ============?? 

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 p {
-  color: #222f3f;
+  color: #666666;
 }
 
 a {
@@ -20,32 +20,35 @@ body {
   color: #1f1f1f;
 }
 
-.site-header {
+.site {
+  /*features section*/
+}
+.site {
   background-color: #f8f8f8;
 }
-.site-header nav {
+.site .site-header nav {
   padding: 15px 0;
 }
-.site-header nav a {
+.site .site-header nav a {
   color: #1f1f1f;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -1;
 }
-.site-header nav a:hover {
+.site .site-header nav a:hover {
   color: #1290a4;
 }
-.site-header nav .btn1 {
+.site .site-header nav .btn1 {
   background-color: transparent;
   border: none;
 }
-.site-header nav .btn1 a {
+.site .site-header nav .btn1 a {
   color: #666666;
 }
-.site-header nav .btn1 a:hover {
+.site .site-header nav .btn1 a:hover {
   color: #1290a4;
 }
-.site-header nav .btn2 {
+.site .site-header nav .btn2 {
   color: #ffffff;
   font-weight: 700;
   border: 1px solid #1290a4;
@@ -55,30 +58,31 @@ body {
   height: 39px;
   margin: 0 17px;
 }
-.site-header nav .btn2 a {
+.site .site-header nav .btn2 a {
   color: white;
 }
-.site-header .home {
-  padding: 115px 0;
+.site .site-header .home {
+  padding: 115px 0 70px;
 }
-.site-header .home .content {
+.site .site-header .home .content {
   padding-right: 35px;
 }
-.site-header .home .content h1 {
+.site .site-header .home .content h1 {
   line-height: 62px;
 }
-.site-header .home .content p {
+.site .site-header .home .content p {
   font-size: 21px;
   font-weight: 400px;
   line-height: 36px;
   margin: 30px 0;
+  color: #222f3f;
 }
-.site-header .home .content .ph {
+.site .site-header .home .content .ph {
   color: #666666;
   font-size: 16px;
   margin: 5px 0;
 }
-.site-header .home .content input {
+.site .site-header .home .content input {
   color: #666666;
   border-radius: 5px;
   background: rgba(18, 144, 164, 0.07);
@@ -86,7 +90,7 @@ body {
   border-color: transparent;
   width: 270px;
 }
-.site-header .home .content .btn2 {
+.site .site-header .home .content .btn2 {
   color: #ffffff;
   font-weight: 700;
   border: 1px solid #1290a4;
@@ -97,37 +101,83 @@ body {
   width: 177px;
   font-size: 18px;
 }
-.site-header .home .content .btn2 a {
+.site .site-header .home .content .btn2 a {
   color: white;
 }
-.site-header .home img {
+.site .site-header .home img {
   max-width: 100%;
 }
-
-/*features section*/
-.Features-section .shape svg {
-  height: 113px;
-  width: 100%;
-}
-.Features-section .features {
+.site .Features-section .features {
   background-color: #e8f1f3;
-  padding: 50px 0;
+  padding: 60px 0;
 }
-.Features-section .features h1 {
+.site .Features-section .features h1 {
   text-align: center;
 }
-.Features-section .features .feature {
+.site .Features-section .features .feature {
   border-radius: 5px;
   border: 1px solid #d9e4e6;
   background-color: #ffffff;
   padding: 40px 20px;
 }
-.Features-section .features .feature h3 {
+.site .Features-section .features .feature h3 {
   letter-spacing: -2px;
   font-weight: 501;
 }
-.Features-section .features .feature p {
+.site .Features-section .features .feature a {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 28px;
+  color: #1290a4;
+}
+.site .content-section h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+.site .content-section p {
+  font-size: 21px;
+  line-height: 36px;
+  margin-right: 42px;
+}
+.site .content-section .content-1 a {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 28px;
+  color: #1290a4;
+}
+.site .content-section .content-2 li {
+  list-style: none;
+  font-size: 21px;
+  color: #1f1f1f;
+  line-height: 43px;
+}
+.site .content-section .content-3 .content-color {
+  background-color: #fefdfd;
+}
+.site .content-section .content-3 .content-color p {
+  margin-right: 9px;
+}
+.site .content-section .content-3 .content-color .ph {
   color: #666666;
+  font-size: 17px;
+  border-top: 1px solid #e5e5e5;
+}
+.site .content-section .content-3 .content-color .btn-1 {
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid #1290a4;
+  border-radius: 3px;
+  background-color: #1290a4;
+  min-width: 170px;
+  height: 50px;
+  background-color: #f46f7c;
+  border: 1px solid #f46f7c;
+  letter-spacing: -1.02px;
+}
+.site .content-section .content-3 .content-color .btn-1 a {
+  color: #ffffff;
 }
 
 /*!
@@ -10031,6 +10081,11 @@ h1 {
   font-size: 60px;
   font-weight: 600;
   letter-spacing: -3px;
+}
+
+i {
+  color: #1290a4;
+  font-size: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */
