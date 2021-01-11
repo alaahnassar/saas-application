@@ -1,222 +1,366 @@
-$primary-color:#1f1f1f;
-//$second-color:;
-$third-color:#1290a4;
-$bg-color:#f8f8f8;
-$p-color: #666666;
-p {
-    color: $p-color;
-}
-
-a {
-    text-decoration: none !important;
-}
-
-@mixin button {
-    color: #ffffff;
-    font-weight: 700;
-    border: 1px solid $third-color;
-    border-radius: 3px;
-    background-color: $third-color;
-}
-
-@mixin link {
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: -0.4px;
-    line-height: 28px;
-    color: $third-color;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 14px;
-    line-height: 1;
-    color: $primary-color;
-}
-
-.site {
-    & {
-        background-color: $bg-color;
-    }
-    .site-header {
-        nav {
-            & {
-                padding: 15px 0;
-            }
-            a {
-                color: $primary-color;
-                font-size: 16px;
-                font-weight: 500;
-                letter-spacing: -1;
-            }
-            a:hover {
-                color: $third-color;
-            }
-            .btn1 {
-                background-color: transparent;
-                border: none;
-                a {
-                    color: $p-color;
-                }
-                a:hover {
-                    color: $third-color
-                }
-            }
-            .btn2 {
-                @include button;
-                width: 137px;
-                height: 39px;
-                margin: 0 17px;
-                a {
-                    color: white;
-                }
-            }
-        }
-        .home {
-            padding: 115px 0 70px;
-            .content {
-                padding-right: 35px;
-                h1 {
-                    line-height: 62px;
-                }
+                $primary-color:#1f1f1f;
+                //$second-color:;
+                $third-color:#1290a4;
+                $bg-color:#f8f8f8;
+                $p-color: #666666;
                 p {
-                    font-size: 21px;
-                    font-weight: 400px;
-                    line-height: 36px;
-                    margin: 30px 0;
-                    color: #222f3f
-                }
-                .ph {
                     color: $p-color;
-                    font-size: 16px;
-                    margin: 5px 0;
                 }
-                input {
-                    color: $p-color;
-                    border-radius: 5px;
-                    background: rgba(18, 144, 164, 0.07);
-                    padding-left: 17px;
-                    border-color: transparent;
-                    width: 270px;
-                }
-                .btn2 {
-                    @include button;
-                    margin-left: 30px;
-                    height: 50px;
-                    width: 177px;
-                    font-size: 18px;
-                    a {
-                        color: white;
-                    }
-                }
-            }
-            img {
-                max-width: 100%;
-            }
-        }
-    }
-    /*features section*/
-    .Features-section {
-        .features {
-            & {
-                background-color: #e8f1f3;
-                padding: 60px 0;
-            }
-            h1 {
-                text-align: center;
-            }
-            .feature {
-                & {
-                    border-radius: 5px;
-                    border: 1px solid #d9e4e6;
-                    background-color: #ffffff;
-                    padding: 40px 20px;
-                }
-                h3 {
-                    letter-spacing: -2px;
-                    font-weight: 501;
-                }
+                
                 a {
-                    @include link;
+                    text-decoration: none !important;
                 }
-            }
-        }
-    }
-    //content-section
-    .content-section {
-        & {
-            h1 {
-                font-size: 48px;
-                line-height: 60px;
-            }
-            p {
-                font-size: 21px;
-                line-height: 36px;
-                margin-right: 42px;
-            }
-        }
-        .content-1 {
-            a {
-                @include link;
-            }
-        }
-        .content-2 {
-            li {
-                list-style: none;
-                font-size: 21px;
-                color: $primary-color;
-                line-height: 43px;
-            }
-        }
-        .content-3 {
-            .content-color {
-                background-color: #fefdfd;
-                p {
-                    margin-right: 9px;
+                
+                @mixin button {
+                    color: #ffffff;
+                    font-weight: 700;
+                    border: 1px solid $third-color;
+                    border-radius: 3px;
+                    background-color: $third-color;
                 }
-                .ph {
-                    color: $p-color;
+                
+                @mixin link {
                     font-size: 17px;
-                    border-top: 1px solid #e5e5e5;
+                    font-weight: 700;
+                    letter-spacing: -0.4px;
+                    line-height: 28px;
+                    color: $third-color;
                 }
-                .btn-1 {
-                    @include button;
-                    min-width: 170px;
-                    height: 50px;
-                    background-color: #f46f7c;
-                    border: 1px solid #f46f7c;
-                    letter-spacing: -1.02px;
-                    a {
-                        color: #ffffff;
+                
+                * {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                body {
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                    font-size: 14px;
+                    line-height: 1;
+                    color: $primary-color;
+                }
+                
+                .site {
+                    & {
+                        background-color: $bg-color;
+                    }
+                    .site-header {
+                        nav {
+                            & {
+                                padding: 15px 0;
+                            }
+                            a {
+                                color: $primary-color;
+                                font-size: 16px;
+                                font-weight: 500;
+                                letter-spacing: -1;
+                            }
+                            a:hover {
+                                color: $third-color;
+                            }
+                            .btn1 {
+                                background-color: transparent;
+                                border: none;
+                                a {
+                                    color: $p-color;
+                                }
+                                a:hover {
+                                    color: $third-color
+                                }
+                            }
+                            .btn2 {
+                                @include button;
+                                width: 137px;
+                                height: 39px;
+                                margin: 0 17px;
+                                a {
+                                    color: white;
+                                }
+                            }
+                        }
+                        .home {
+                            padding: 115px 0 70px;
+                            .content {
+                                padding-right: 35px;
+                                h1 {
+                                    line-height: 62px;
+                                }
+                                p {
+                                    font-size: 21px;
+                                    font-weight: 400px;
+                                    line-height: 36px;
+                                    margin: 30px 0;
+                                    color: #222f3f
+                                }
+                                .ph {
+                                    color: $p-color;
+                                    font-size: 16px;
+                                    margin: 5px 0;
+                                }
+                                input {
+                                    color: $p-color;
+                                    border-radius: 5px;
+                                    background: rgba(18, 144, 164, 0.07);
+                                    padding-left: 17px;
+                                    border-color: transparent;
+                                    width: 270px;
+                                }
+                                .btn2 {
+                                    @include button;
+                                    margin-left: 30px;
+                                    height: 50px;
+                                    width: 177px;
+                                    font-size: 18px;
+                                    a {
+                                        color: white;
+                                    }
+                                }
+                            }
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    /*features section*/
+                    .Features-section {
+                        .features {
+                            & {
+                                background-color: #e8f1f3;
+                                padding: 60px 0;
+                            }
+                            h1 {
+                                text-align: center;
+                            }
+                            .feature {
+                                & {
+                                    border-radius: 5px;
+                                    border: 1px solid #d9e4e6;
+                                    background-color: #ffffff;
+                                    padding: 40px 20px;
+                                }
+                                h3 {
+                                    letter-spacing: -2px;
+                                    font-weight: 501;
+                                }
+                                a {
+                                    @include link;
+                                }
+                                p {
+                                    font-size: 17px;
+                                    line-height: 28px;
+                                    letter-spacing: -0.4px;
+                                }
+                            }
+                        }
+                    }
+                    //content-section
+                    .content-section {
+                        & {
+                            h1 {
+                                font-size: 48px;
+                                line-height: 60px;
+                            }
+                            p {
+                                font-size: 21px;
+                                line-height: 36px;
+                                margin-right: 42px;
+                            }
+                        }
+                        .content-1 {
+                            a {
+                                @include link;
+                            }
+                        }
+                        .content-2 {
+                            li {
+                                font-size: 21px;
+                                i {
+                                    color: $third-color;
+                                }
+                            }
+                        }
+                        .content-3 {
+                            .content-color {
+                                background-color: #fefdfd;
+                                p {
+                                    margin-right: 9px;
+                                }
+                                .ph {
+                                    color: $p-color;
+                                    font-size: 17px;
+                                    border-top: 1px solid #e5e5e5;
+                                }
+                                .btn-1 {
+                                    @include button;
+                                    min-width: 170px;
+                                    height: 50px;
+                                    background-color: #f46f7c;
+                                    border: 1px solid #f46f7c;
+                                    letter-spacing: -1.02px;
+                                    a {
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //pricing-section 
+                    .pricing-section {
+                        & {
+                            background-color: #fefdfd;
+                        }
+                        .content {
+                            & {
+                                background-color: #30393b;
+                            }
+                            p {
+                                font-size: 21px;
+                                font-weight: 400;
+                                letter-spacing: -0.4px;
+                                line-height: 36px;
+                                padding: 20px 190px;
+                                color: #878b90;
+                            }
+                            .ph {
+                                font-size: 17px;
+                            }
+                            .pricies-cards {
+                                .card {
+                                    h6 {
+                                        color: #666666;
+                                        font-family: 'Karla', sans-serif;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        letter-spacing: -0.6px;
+                                        text-transform: uppercase;
+                                    }
+                                    h2 {
+                                        & {
+                                            font-size: 17px;
+                                            font-weight: 700;
+                                            letter-spacing: -0.68px
+                                        }
+                                        .s-one {
+                                            font-size: 30px;
+                                            font-weight: 700;
+                                            letter-spacing: -1.2px
+                                        }
+                                        .s-two {
+                                            font-size: 50px;
+                                            font-weight: 700;
+                                            letter-spacing: -2px;
+                                            line-height: 60px;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        letter-spacing: -0.2px;
+                                        padding: 0;
+                                        line-height: 23px;
+                                    }
+                                    li {
+                                        font-size: 17px;
+                                        font-weight: 400;
+                                        line-height: 42px;
+                                    }
+                                    .btn {
+                                        @include button;
+                                        font-size: 18px;
+                                        letter-spacing: -0.5px;
+                                        height: 50px;
+                                        width: 190px;
+                                        a {
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //footer-section
+                    .footer-section {
+                        & {
+                            padding: 50px 0;
+                        }
+                        .first-footer {
+                            & {
+                                border-bottom: 1px solid #e5e5e5;
+                            }
+                            h1 {
+                                font-size: 50px;
+                            }
+                            p {
+                                font-size: 21px;
+                                font-weight: 400;
+                                letter-spacing: -0.4px;
+                                line-height: 36px;
+                                padding: 0 190px;
+                            }
+                            input {
+                                color: $p-color;
+                                border-radius: 5px;
+                                background: rgba(18, 144, 164, 0.07);
+                                border-color: transparent;
+                                width: 340px;
+                                height: 50px;
+                                padding: 0 17px;
+                            }
+                            .btn2 {
+                                @include button;
+                                margin-left: 10px;
+                                height: 50px;
+                                width: 177px;
+                                font-size: 18px;
+                                a {
+                                    color: white;
+                                }
+                            }
+                            .ph {
+                                font-size: 15px;
+                                font-weight: 501;
+                                letter-spacing: 0.3px;
+                            }
+                        }
+                        .second-footer {
+                            & {}
+                            p {
+                                font-size: 16px;
+                                line-height: 28px;
+                                letter-spacing: -0.3px;
+                            }
+                            h5 {
+                                color: $p-color;
+                                font-size: 14px;
+                                font-weight: 700;
+                                line-height: 28px;
+                            }
+                            .list {
+                                li {
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    letter-spacing: -0.4px;
+                                    line-height: 35px;
+                                }
+                            }
+                        }
+                    }
+                    @import'./bs4/bootstrap.scss';
+                    h1 {
+                        font-size: 60px;
+                        font-weight: 600;
+                        letter-spacing: -3px;
+                    }
+                    i {
+                        font-size: 19px;
+                    }
+                    li {
+                        list-style: none;
+                        color: $primary-color;
+                        line-height: 43px;
+                    }
+                    .disabled {
+                        text-decoration: line-through;
+                        color: #878b90;
                     }
                 }
-            }
-        }
-    }
-}
-
-@import'./bs4/bootstrap.scss';
-h1 {
-    font-size: 60px;
-    font-weight: 600;
-    letter-spacing: -3px;
-}
-
-i {
-    color: $third-color;
-    font-size: 19px;
-}
-
-// ========== media ============?? 
-//@media (max-width: 1000px) {
-// .Features-section {
-//    padding-top: 250px;
-//}
-//}
-;
