@@ -185,10 +185,11 @@ body {
   height: 50px;
   background-color: #f46f7c;
   border: 1px solid #f46f7c;
-  letter-spacing: -1.02px;
+  letter-spacing: -1px;
 }
 .site .content-section .content-3 .content-color .btn-1 a {
   color: #ffffff;
+  font-size: 17px;
 }
 .site .pricing-section {
   background-color: #fefdfd;
@@ -316,7 +317,7 @@ body {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: -0.4px;
-  line-height: 35px;
+  line-height: 40px;
 }
 .site :root {
   --blue: #007bff;
